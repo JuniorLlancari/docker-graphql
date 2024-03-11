@@ -32,6 +32,6 @@ jobs:
         docker build -t juniorllancari/docker-graphql:0.0.1 .
     - name: Push Docker Image
       run: |  
-        docker push juniorllancari/docker-graphql:0.0.1 .
+        docker push juniorllancari/docker-graphql:0.0.1 
 
     #run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
