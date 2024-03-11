@@ -20,8 +20,8 @@ jobs:
         
     - name: Docker Login
       env: 
-        DOCKER_USER: ${{DOCKER_USER}}
-        DOCKER_TOKEN_ACCESO: ${{DOCKER_TOKEN_ACCESO}}
+        DOCKER_USER: ${{ secrets.DOCKER_USER }}
+        DOCKER_TOKEN_ACCESO: ${{ secrets.DOCKER_TOKEN_ACCESO }}
       run: 
         echo "Inicio login"
         docker login -u $DOCKER_USER -p $DOCKER_TOKEN_ACCESO
